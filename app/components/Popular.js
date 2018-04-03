@@ -20,7 +20,7 @@ class Popular extends React.Component {
 		var languages = ['All','JavaScript','Ruby','Java','CSS','Python'];
 		return (
 			<ul className='languages'>
-				{languages.map(function (lang,index) {
+				{languages.map( (lang, index) => {
 					return(
 						<li
 						style={lang === this.state.selectedLanguage ? { color: '#d0021b'}: null}
@@ -29,10 +29,13 @@ class Popular extends React.Component {
 							{lang}
 						</li>
 					)
-				}, this)}
+				})}
 			</ul>
 		)
 	}
 }
 
 module.exports = Popular;
+
+//This keyword inside arrow funxtion is same as the one
+//outside arrow function
